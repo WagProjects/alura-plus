@@ -1,0 +1,155 @@
+/* PADRÕES DO PROJETO */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --font-principal: 'Inter';
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* BACKGROUNDS */
+
+.principal{
+    background-image: url(./img/Background.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+/* PRIMEIRO CONTAINER */
+
+.container__caixa{
+    margin-left: 58px;
+    width: 588px;
+    height: 431px;
+}
+
+.container__caixa img#combo{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    
+}
+
+.conteinar__caixa h1{
+    font-weight: 700;
+}
+
+
+
+.container__botao{
+    display: inline-block;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    width: 512px;
+    background-color: #167BF7;
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.botao__secundario{
+    display: inline-block;
+    border-radius: 8px;
+    border: 1px solid var(--branco-principal);
+    padding: 16px;
+    margin: 0px;
+    width: 512px;
+    background-color: unset;
+    color: var(--branco-principal);
+    text-decoration: none;
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+/* SEGUNDO CONTAINER */
+.caixa__esquerda{
+    padding-left: 15%;
+    text-align: left;
+    color: var(--cinza-secundario);
+}
+
+
+.caixa__direita{
+    margin-right: 10em;
+}
+
+
+.caixa__direita h1{
+    text-align: left;
+    font-size: 48px;
+    margin-bottom: 0.3em;
+}
+
+.caixa__direita p{
+    text-align: left;
+    font-size: 16px;
+    color: var(--cinza-secundario);
+}
+
+/* TERCEIRO CONTAINER */
+.botao__assine{
+    margin-left: 0;
+    display: inline-block;
+    width: 134px;
+}
+
+/* FOOTER */
+
+footer{
+    margin: 0px 120px 50px;
+}
+
+footer img{
+    margin: 20px;
+}
+
+footer ul{
+    margin: 20px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-right: 16px;
+}
+
+footer ul a:hover{
+    color: var(--botao-azul);
+}
+footer ul a:active{
+    color: var(--branco-principal);
+}
+
+footer p{
+    color: var(--cinza-secundario);
+    font-size: 14px;
+    margin: 20px;
+}
